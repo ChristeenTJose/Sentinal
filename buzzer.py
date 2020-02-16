@@ -8,4 +8,4 @@ while(True):
 	time.sleep(1)
 	GPIO.output(18,GPIO.HIGH)
 	time.sleep(1)
-GPIO.cleanup()
+#GPIO.cleanup()
