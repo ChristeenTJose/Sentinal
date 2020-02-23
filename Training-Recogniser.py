@@ -16,7 +16,7 @@ for Directory in Categories:
         print('\nProcessing image: '+ImagePath,end='')
         PIL_Image=Image.open(ImagePath).convert('L')#Convert it to grayscale
         numpy_Array = np.array(PIL_Image,'uint8')
-        faces = model_detector.detectMultiScale(numpy_Array, 1.3, 5)
+        faces = model_detector.detectMultiScale(numpy_Array, 1.1, 5)
         print('\nNumber of faces found: ',len(faces))
         if(len(faces)==1):
             for (x,y,W,H) in faces:
